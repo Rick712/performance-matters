@@ -2,12 +2,12 @@
 This file describes the things I did to reduce the loadtime of the static Bootstrap website.
 
 ## Begin state
-When checking the loadtime of the website before the changes, it took 40 seconds for the page to fully load on regular 2G according to webpagecheck.com ![results of webpagecheck.com](https://i.imgur.com/TUyoOZ4)
+When checking the loadtime of the website before the changes, it took 40 seconds for the page to fully load on regular 2G according to webpagecheck.com ![results of webpagecheck.com](https://i.imgur.com/TUyoOZ4.png)
 
-![Waterfall view webpagecheck.com](https://i.imgur.com/hbZqieJ)
+![Waterfall view webpagecheck.com](https://i.imgur.com/hbZqieJ.png)
 As you can see on the waterfall view, the first paint is around 12,5 seconds, the first interactive around 21,5 seconds and the page is fully loaded at around 41 seconds.
 
-![Google audits results](https://i.imgur.com/vcgDHns)
+![Google audits results](https://i.imgur.com/vcgDHns.png)
 Google Audits rates the website 57 out of 100, and says that the first meaningfull paint is around 5.9 seconds.
 
 ### Image compression
@@ -23,13 +23,13 @@ Since I had critical CSS, I could move the CSS files to the bottom of the page. 
 The third thing I did was minifying the HTML, CSS and JS. I could explain everything I did, but I'm sure you probably know what minification is, and how it works, so I won't get into detail in this one.
 
 ## Results
-![Google Audits results](https://i.imgur.com/ucNP86f)
+![Google Audits results](https://i.imgur.com/ucNP86f.png)
 According to Google Audits, the first meaningfull paint is in 1.2 seconds, a difference of 4.7 seconds in comparison with the begin state. It also rates the website 84 out of 100 instead of 57.
 
-![Webpagecheck results](https://i.imgur.com/Ekt3nM9)
+![Webpagecheck results](https://i.imgur.com/Ekt3nM9.png)
 According to Webpagecheck.com, the first view is in around 21 seconds, a difference of 19 seconds compared to the begin state.
 
-![Webpagecheck waterfall view](https://i.imgur.com/RitKW5G)
+![Webpagecheck waterfall view](https://i.imgur.com/RitKW5G.png)
 Here you can see the waterfall view of all the requests that the web page needs to render. Comparing this one with the one above, it is almost 50% of the time.
 
 ![Videostrip begin en eind webpagecheck.com](https://i.imgur.com/YRrQPdw.png)
